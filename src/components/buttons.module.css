@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  gap: 0.2rem;
+}
+
+.box {
+  width: 32%;
+  background-color: #20b0cf;
+  border: 1px solid black;
+  height: 50px;
+}
+.box:hover {
+  opacity: 80%;
+}
+.box0:hover {
+  opacity: 50%;
+}
+.box0 {
+  width: 98%;
+  background-color: #20b0cf;
+  border: 1px solid black;
+  height: 50px;
+}

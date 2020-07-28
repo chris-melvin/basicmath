@@ -1,5 +1,6 @@
-export const RandomNumbers = () => {
-  const myArray = [];
+export const RandomNumbers = (item, difficulty) => {
+  let itemNumber = item;
+  console.log(itemNumber);
 
   const randomNumber = (range) => {
     let num1 = Math.floor(Math.random() * range + 1);
@@ -8,6 +9,7 @@ export const RandomNumbers = () => {
     let difference = num1 - num2;
     let product = num1 * num2;
     let qoutient = num1 / num2;
+    let operation = Math.floor(Math.random() * 4 + 1);
     return {
       num1: num1,
       num2: num2,
@@ -15,11 +17,9 @@ export const RandomNumbers = () => {
       difference: difference,
       product: product,
       qoutient: qoutient,
+      operation: operation,
     };
   };
 
-  for (let i = 0; i < 10; i++) {
-    myArray.push(randomNumber(10));
-  }
-  return myArray;
+  return randomNumber(difficulty);
 };
